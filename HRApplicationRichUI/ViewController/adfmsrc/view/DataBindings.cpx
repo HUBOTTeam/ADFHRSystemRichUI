@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.22.48" id="DataBindings"
+             SeparateXMLFiles="false" Package="view" ClientType="Generic">
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/adf/controller/binding"
+             className="oracle.adf.controller.internal.binding.TaskFlowBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
+  </definitionFactories>
+  <pageMap>
+    <page path="/DeptEmpPage.jsf" usageId="view_DeptEmpPagePageDef"/>
+    <page path="/query.jsf" usageId="view_queryPageDef"/>
+    <page path="/SearchEmail.jsff" usageId="view_SearchEmailPageDef"/>
+    <page path="/Departments.jsf" usageId="view_DepartmentsPageDef"/>
+    <page path="/Employees.jsf" usageId="view_EmployeesPageDef"/>
+    <page path="/soringboard.jsf" usageId="view_soringboardPageDef"/>
+    <page path="/Employees.jsff" usageId="view_EmployeesPageDef1"/>
+    <page path="/Departments.jsff" usageId="view_DepartmentsPageDef1"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="view_DeptEmpPagePageDef" path="view.pageDefs.DeptEmpPagePageDef"/>
+    <page id="view_queryPageDef" path="view.pageDefs.queryPageDef"/>
+    <page id="view_SearchEmailPageDef" path="view.pageDefs.SearchEmailPageDef"/>
+    <page id="view_DepartmentsPageDef" path="view.pageDefs.DepartmentsPageDef"/>
+    <page id="view_EmployeesPageDef" path="view.pageDefs.EmployeesPageDef"/>
+    <page id="view_soringboardPageDef" path="view.pageDefs.soringboardPageDef"/>
+    <page id="view_EmployeesPageDef1" path="view.pageDefs.EmployeesPageDef1"/>
+    <page id="view_DepartmentsPageDef1" path="view.pageDefs.DepartmentsPageDef1"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleAMDataControl" Package="model.BO.AM"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="AppModuleAMLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>
